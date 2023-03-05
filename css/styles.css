@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  max-width: 1104px;
+  width: calc(100% - 280px);
+  margin-left: 240px;
+}
+
+.cabecalho {
+  display: flex;
+  width: 100%;
+  padding: 15px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho h1 {
+  color: #4a5576;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.cabecalho span img {
+  width: 20px;
+  height: 20px;
+}
