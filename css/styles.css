@@ -23,6 +23,7 @@ body {
   background-color: #fff;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 14px;
 }
 
 .cabecalho h1 {
@@ -35,4 +36,115 @@ body {
 .cabecalho span img {
   width: 20px;
   height: 20px;
+}
+
+.box-processo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 70px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.box-processo .box-info-processo,
+.box-info-processo-buttons {
+  width: 100%;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.box-info-processo div:nth-child(1),
+.box-info-processo-buttons div:nth-child(1) {
+  flex: 8;
+}
+
+.box-info-processo div:nth-child(2),
+.box-info-processo-buttons div:nth-child(2) {
+  flex: 4;
+  padding: 0 10px;
+}
+
+.box-info-processo .box-yellow,
+.box-info-processo .box-red {
+  display: inline-block;
+  width: 115px;
+  height: 25px;
+  text-align: center;
+  padding: 0px 13px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  border-radius: 18px;
+}
+
+.box-info-processo-buttons .green-btn,
+.box-info-processo-buttons .blue-btn {
+  padding: 8px 22px;
+  width: 116px;
+  height: 40px;
+  margin-left: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.box-info-processo-buttons .green-btn svg,
+.box-info-processo-buttons .blue-btn svg {
+  margin-left: 5px;
+  margin-bottom: -3px;
+}
+
+.box-info-processo .box-yellow {
+  background-color: #fabe33;
+  margin-left: 27px;
+}
+
+.box-info-processo .box-red {
+  background-color: #c10909;
+  margin-left: 13px;
+}
+
+.box-info-processo-buttons .green-btn {
+  background-color: #04845e;
+}
+
+.box-info-processo-buttons .blue-btn {
+  background-color: #17c1e8;
+}
+
+.box-info-processo h4 {
+  margin-bottom: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4a5576;
+  line-height: 21px;
+}
+
+.box-info-processo p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a5576;
+  line-height: 21px;
+}
+
+.box-info-processo p span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #4a5576;
+  line-height: 21px;
 }
