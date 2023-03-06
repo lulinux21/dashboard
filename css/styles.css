@@ -121,3 +121,69 @@ body {
 .box-info-processo-buttons .blue-btn {
   background-color: #17c1e8;
 }
+.box-info-processo h4 {
+  margin-bottom: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4a5576;
+  line-height: 21px;
+}
+
+.box-info-processo p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a5576;
+  line-height: 21px;
+}
+
+.box-info-processo p span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #4a5576;
+  line-height: 21px;
+}
+
+.box-view-processo {
+  height: 285px;
+  overflow-y: scroll;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+.box-view-container {
+  display: flex;
+  margin-bottom: 8px;
+  background-color: #8591a4;
+  border-radius: 8px;
+}
+
+.box-view-nome {
+  flex: 3;
+  background-color: #8591a4;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.box-view-nome h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.box-view-doc {
+  border: 1px solid #8591a4;
+  flex: 9;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 8px;
+  color: #4a5576;
+  border-radius: 8px;
+}
