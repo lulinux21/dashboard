@@ -151,7 +151,7 @@ body {
 }
 
 .box-view-processo {
-  height: 280px;
+  height: 285px;
   overflow-y: scroll;
   flex-direction: column;
   font-family: "Inter", sans-serif;
