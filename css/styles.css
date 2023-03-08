@@ -189,7 +189,7 @@ body {
 
 .box-view-nome,
 .box-processo-nome,
-.box-documento-nome {
+.box-documentos-nome {
   flex: 3;
   background-color: #8591a4;
   padding: 8px;
@@ -264,9 +264,20 @@ body {
 }
 
 /* Documentos */
-/* .box-documentos-nome {
-  color: red;
+.box-documentos-nome {
+  flex: 6;
 }
+
+.box-documentos-nome h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
 .box-documentos-doc {
-  color: purple;
-} */
+  flex: 4;
+  justify-content: flex-end;
+}
