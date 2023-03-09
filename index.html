@@ -10,7 +10,12 @@
     <title>Dashboard</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -108,7 +113,12 @@
           </div>
 
           <div>
-            <a href="#" class="green-btn">
+            <a
+              href="#"
+              class="green-btn"
+              data-toggle="modal"
+              data-target="#modal-mensagem"
+            >
               <svg
                 width="20"
                 height="20"
@@ -394,8 +404,99 @@
           </div>
         </div>
       </main>
+
+      <div class="modal fade" id="modal-mensagem">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span>×</span>
+              </button>
+              <h4 class="modal-title">Processo</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label"
+                    >Encaminhar:</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Unidade / Posto Atendimento"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label"
+                    >Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Usuário"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+                <div style="display: flex" class="form-group">
+                  <label
+                    style="visibility: hidden"
+                    for="recipient-name"
+                    class="col-form-label"
+                    >Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+                  >
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+                class="form-group"
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <label for="recipient-name" class="col-form-label"
+                    >Situação:&nbsp;&nbsp;</label
+                  >
+
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+
+                <button
+                  style="background-color: #a0bee6; font-weight: 500"
+                  type="button"
+                  class="btn-modal btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="" async defer></script>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        //código para exibir os modais
+        $("#btn-mensagem").click(function () {
+          $("#modal-mensagem").modal();
+        });
+      });
+    </script>
   </body>
 </html>
