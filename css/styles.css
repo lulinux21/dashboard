@@ -8,10 +8,16 @@ body {
   background-color: #eee !important;
 }
 
+.row {
+  display: flex;
+}
+
 .container {
-  max-width: 1104px !important;
+  /* max-width: 1104px !important;
   width: calc(100% - 280px) !important;
-  margin-left: 240px !important;
+  margin-left: 240px !important; */
+
+  border: 1px solid #111;
 }
 
 .cabecalho {
@@ -139,11 +145,11 @@ body {
   margin-left: 13px !important;
 }
 
-.box-info-processo-buttons .green-btn {
+.green-btn {
   background-color: #04845e !important;
 }
 
-.box-info-processo-buttons .blue-btn {
+.blue-btn {
   background-color: #17c1e8 !important;
 }
 .box-info-processo h4 {
@@ -205,17 +211,16 @@ body {
 }
 
 .box-view-doc,
-.box-processo-doc,
 .box-documentos-doc {
-  border: 1px solid #8591a4 !important;
-  flex: 9 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  background-color: #ffffff !important;
-  padding: 8px !important;
-  color: #4a5576 !important;
-  border-radius: 8px !important;
+  border: 1px solid #8591a4;
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 8px;
+  color: #4a5576;
+  border-radius: 8px;
 }
 
 .box-view-doc a {
@@ -229,38 +234,33 @@ body {
 }
 
 /* Despachos */
-.box-processo-nome {
-  flex: 4 !important;
-}
-.box-processo-doc {
-  flex: 8 !important;
-}
+
 .box-processo-nome h3 {
-  font-family: "Inter" !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 16px !important;
-  line-height: 150% !important;
-  color: #fff !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
 }
 
 .box-processo-nome p {
-  font-family: "Inter" !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: 150% !important;
-  color: #fff !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
 }
 
 .box-processo-doc p {
-  font-family: "Inter" !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  text-align: justify !important;
-  line-height: 150% !important;
-  color: #4a5576 !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 150%;
+  color: #4a5576;
 }
 
 /* Documentos */
