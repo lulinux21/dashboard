@@ -126,46 +126,46 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">
-                <span>×</span>
+                <span style="color: #111">×</span>
               </button>
-              <h4 class="modal-title">Emissão de Documento</h4>
+              <h4 class="modal-title title-modal">Emissão de Documento</h4>
             </div>
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label"
-                    >Encaminhar:</label
+                  <label for="recipient-name" class="col-form-label title-label"
+                    >Insira uma observação:</label
                   >
-                  <input
-                    type="text"
-                    placeholder="Unidade / Posto Atendimento"
+                  <textarea
                     class="form-control"
-                    id="recipient-name"
-                  />
+                    rows="8"
+                    id="message-text"
+                  ></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label"
-                    >Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+                  <label for="recipient-name" class="col-form-label title-label"
+                    >Observação:</label
                   >
-                  <input
-                    type="text"
-                    placeholder="Usuário"
+                  <textarea
                     class="form-control"
-                    id="recipient-name"
-                  />
+                    rows="5"
+                    id="message-text"
+                  ></textarea>
                 </div>
-                <div style="display: flex" class="form-group">
-                  <label
-                    style="visibility: hidden"
-                    for="recipient-name"
-                    class="col-form-label"
-                    >Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label title-label"
+                    >Signatários:</label
                   >
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <select class="form-control">
+                    <option selected>Selecione os signatários</option>
+                    <option>Selecione os signatários</option>
+                    <option>Selecione os signatários</option>
+                  </select>
                 </div>
               </form>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer modal-footer-emitir">
               <div
                 style="
                   display: flex;
@@ -181,17 +181,18 @@
                     align-items: center;
                   "
                 >
-                  <label for="recipient-name" class="col-form-label"
-                    >Situação:&nbsp;&nbsp;</label
+                  <button
+                    type="button"
+                    class="btn-modal btn btn-default btn-cancel"
+                    data-dismiss="modal"
                   >
-
-                  <input type="text" class="form-control" id="recipient-name" />
+                    Cancelar
+                  </button>
                 </div>
 
                 <button
-                  style="background-color: #a0bee6; font-weight: 500"
                   type="button"
-                  class="btn-modal btn btn-default"
+                  class="btn-modal btn btn-default btn-sucess"
                   data-dismiss="modal"
                 >
                   Enviar
