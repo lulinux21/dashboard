@@ -139,10 +139,19 @@ body > div > main > div:nth-child(2) > div.col-xs-8 > a:nth-child(3) {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("./imgs/anexo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 3px;
+}
+
+.anexo::before {
+  background-image: url("./../imgs/anexo.svg");
+}
+.despacho::before {
+  background-image: url("./../imgs/despacho.svg");
+}
+.documento::before {
+  background-image: url("./../imgs/documento.svg");
 }
 
 .anexo:focus::before,
@@ -156,11 +165,6 @@ body > div > main > div:nth-child(2) > div.col-xs-8 > a:focus {
   background: #ffffff;
   box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.1), 1px 0px 3px rgba(0, 0, 0, 0.1),
     0px 4px 3px rgba(0, 0, 0, 0.15);
-}
-
-body > div > main > div:nth-child(2) > div.col-xs-8 > a:focus svg {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(77%) saturate(2044%)
-    hue-rotate(148deg) brightness(94%) contrast(91%) !important;
 }
 
 body > div > main > div:nth-child(2) > div.col-xs-4 {
@@ -222,15 +226,6 @@ body > div > main > div:nth-child(2) > div.col-xs-4 {
   background-color: #8591a4;
   border-radius: 8px;
 }
-
-/* .box-view-nome,
-.box-processo-nome,
-.box-documentos-nome {
-  flex: 3;
-  background-color: #8591a4;
-  padding: 8px;
-  border-radius: 8px;
-} */
 
 .box-view-nome h3,
 .box-documentos-nome h3,
